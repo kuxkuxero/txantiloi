@@ -1,0 +1,43 @@
+// Part of the pitcher github.com/gruncho/stylestree
+//
+// Licensed under GPL v3 2017.
+// Run thanks to Sass: CSS width superpowers.
+
+@import '../variables/colors';
+@import '../variables/typography';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  cursor: default;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $color-white;
+  font-family: $typo-first;
+  font-weight: normal; // revise typo
+  min-height: 100%;
+}
+
+strong {
+  font-weight: bold; // revise typo
+}
+
+a {
+  color: inherit;
+}
+
+::-moz-selection {
+  background: $corporative-first;
+  color: $color-white;
+}
+
+::selection {
+  background: $corporative-first;
+  color: $color-white;
+}
